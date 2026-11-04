@@ -8,6 +8,7 @@
 // 1. Ambil data dari array $_GET menggunakan key nama atribut 'name' di form HTML
 // Gunakan Operator Null Coalescing (??) untuk menghindari warning jika data kosong
 $keyword  = $_GET['keyword'] ?? '';
+$nama = $_GET['nama'] ?? '';
 $kategori = $_GET['kategori'] ?? '';
 
 // 2. Fungsi sanitasi sederhana agar aman dari XSS
@@ -45,6 +46,7 @@ function e($data) {
     <div class="data-list">
         <ul>
             <li><strong>Kata Kunci (keyword):</strong> <?= e($keyword); ?></li>
+            <li><strong>Nama Anda:</strong> <?= e($nama); ?></li>
             <li><strong>Kategori Filter:</strong> <?= e($kategori); ?></li>
         </ul>
     </div>
