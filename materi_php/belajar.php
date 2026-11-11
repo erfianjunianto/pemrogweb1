@@ -4,11 +4,17 @@ $nama_belakang="Junianto";
 
 //echo $nama_depan."<br>".$nama_belakang;
 
-$nilai1=10;
+$nilai1=20;
 $nilai2=10;
 $jumlah=$nilai1+$nilai2;
+$kurang=$nilai1-$nilai2;
+$kali=$nilai1*$nilai2;
+$bagi=$nilai1/$nilai2;
 
-//echo "Jumlah dari ".$nilai1." dan ".$nilai2." adalah : ".$jumlah;
+echo "Hasil dari ".$nilai1." + ".$nilai2." adalah : ".$jumlah."<br>";
+echo "Hasil dari ".$nilai1." - ".$nilai2." adalah : ".$kurang."<br>";
+echo "Hasil dari ".$nilai1." × ".$nilai2." adalah : ".$kali."<br>";
+echo "Hasil dari ".$nilai1." ÷ ".$nilai2." adalah : ".$bagi."<br>";
 
 /**
 if($nilai1 > $nilai2){
@@ -26,4 +32,6 @@ $buah = ["Apel","Mangga","Pisang","Kedongdong"];
 foreach ($buah as $key => $item) {
 	echo "Buah ke-".($key+1).": ".$item."<br>";
 }
+
+
 ?>
