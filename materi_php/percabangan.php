@@ -1,17 +1,22 @@
 <?php
 $nilai1=41;
 
-// if($nilai1 <> 0){
-//     echo "variabel ini isinya lebih atau kurang dari nol";
-// }else{
-//     echo "variabel ini isinya Nol";
-// }
+/** Percabangan Sederhana */
+/** 
+if($nilai1 <> 0){
+    echo "variabel ini isinya lebih atau kurang dari nol";
+}else{
+    echo "variabel ini isinya Nol";
+}
+*/
 
 if($nilai1 >= 0 && $nilai1 <= 40){
     echo "Nilai berada diantara 0 sampai 40";
 }else{
     echo "Nilai tidak berada diantara 0 sampai 40";
 }
+
+
 /**
 if($nilai1 == 10){
     echo "Nilai 10";
